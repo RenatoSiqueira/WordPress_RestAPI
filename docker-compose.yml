@@ -4,7 +4,7 @@ services:
    db:
      image: mysql:5.7
      volumes:
-       - /c/DockerVolumes/mysql:/var/lib/mysql
+       - /d/Projetos/WordPress_RestAPI/mysql:/var/lib/mysql
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: somewordpress
@@ -17,7 +17,7 @@ services:
        - db
      image: wordpress:latest
      volumes:
-       - /c/DockerVolumes/wordpress:/var/www/html
+       - /d/Projetos/WordPress_RestAPI/wordpress:/var/www/html
      ports:
        - "8000:80"
      restart: always
