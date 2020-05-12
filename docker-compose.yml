@@ -19,7 +19,7 @@ services:
      volumes:
        - /c/DockerVolumes/wordpress:/var/www/html
      ports:
-       - "8000:8080"
+       - "8000:80"
      restart: always
      environment:
        WORDPRESS_DB_HOST: db:3306
